@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Detail</title>
+</head>
+<body>
+
+<h1>Image Detail</h1>
+
+<h2>{{ image.title }}</h2>
+<img src="{{ image.image.url }}" alt="{{ image.title }}">
+
+<p><a href="{% url 'multimedia:image_list' %}">Back to Image List</a></p>
+
+</body>
+</html>

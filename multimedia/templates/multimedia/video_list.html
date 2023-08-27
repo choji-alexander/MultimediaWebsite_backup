@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video List</title>
+</head>
+<body>
+
+<h1>Video List</h1>
+
+<ul>
+    {% for video in videos %}
+    <li>
+        <h2>{{ video.title }}</h2>
+        <video width="400" controls>
+            <source src="{{ video.video.url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p><a href="{% url 'multimedia:video_detail' video.id %}">View Details</a></p>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

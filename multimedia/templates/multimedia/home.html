@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Our Multimedia Website</title>
+</head>
+<body>
+    <h1>Welcome to Our Multimedia Website</h1>
+    <p>Explore and enjoy multimedia content!</p>
+    <p><a href="{% url 'multimedia:upload_image' %}">Upload an Image</a></p>
+    <p><a href="{% url 'multimedia:upload_video' %}">Upload a Video</a></p>
+    <p><a href="{% url 'multimedia:image_list' %}">View Images</a></p>
+    <p><a href="{% url 'multimedia:video_list' %}">View Videos</a></p>
+</body>
+</html>
